@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/feature\/getApi[1:4]","start":1712301543182,"end":1712301545356,"title":"src\/test\/java\/feature\/getApi[1:4] 12:49:03.182-12:49:05.356 create and retrieve a user name"},{"id":2,"group":1,"content":"src\/test\/java\/feature\/getApi[2:45]","start":1712301545374,"end":1712301545839,"title":"src\/test\/java\/feature\/getApi[2:45] 12:49:05.374-12:49:05.839 get and retrieve a user name"},{"id":3,"group":1,"content":"src\/test\/java\/feature\/getApi[3:86]","start":1712301545857,"end":1712301546364,"title":"src\/test\/java\/feature\/getApi[3:86] 12:49:05.857-12:49:06.364 put and retrieve a user name"},{"id":4,"group":1,"content":"src\/test\/java\/feature\/getApi[4:126]","start":1712301546378,"end":1712301546908,"title":"src\/test\/java\/feature\/getApi[4:126] 12:49:06.378-12:49:06.908 Patch and retrieve a user name"},{"id":5,"group":1,"content":"src\/test\/java\/feature\/getApi[5:166]","start":1712301546928,"end":1712301547457,"title":"src\/test\/java\/feature\/getApi[5:166] 12:49:06.928-12:49:07.457 Delete and retrieve a user name"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

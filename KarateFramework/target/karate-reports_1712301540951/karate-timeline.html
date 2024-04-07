@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/feature\/assignment[1:5]","start":1712301305088,"end":1712301305273,"title":"src\/test\/java\/feature\/assignment[1:5] 12:45:05.088-12:45:05.273 Get request to get all bookings","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/feature\/assignment[2:10]","start":1712301305299,"end":1712301307897,"title":"src\/test\/java\/feature\/assignment[2:10] 12:45:05.299-12:45:07.897 Post request to create a booking","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/feature\/assignment[3:17]","start":1712301307914,"end":1712301308724,"title":"src\/test\/java\/feature\/assignment[3:17] 12:45:07.914-12:45:08.724 Put request to update a booking","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/feature\/assignment[4:24]","start":1712301308744,"end":1712301309525,"title":"src\/test\/java\/feature\/assignment[4:24] 12:45:08.744-12:45:09.525 Patch request to partially update a booking","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/feature\/assignment[5:31]","start":1712301309542,"end":1712301310304,"title":"src\/test\/java\/feature\/assignment[5:31] 12:45:09.542-12:45:10.304 Delete request to delete a booking","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

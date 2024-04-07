@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("b598e3d1-e9f5-4892-af87-1d5a8ab00b71",{name:"ASUS"});
+    posthog.capture("report_feature",{karate_version:"1.4.0.RC3",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.feature.assignment</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-04-05 12:34:22 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Get request to get all bookings</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:10]"><span>[2:10]</span> <span>Post request to create a booking</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:17]"><span>[3:17]</span> <span>Put request to update a booking</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:24]"><span>[4:24]</span> <span>Patch request to partially update a booking</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:31]"><span>[5:31]</span> <span>Delete request to delete a booking</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/feature/assignment.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">karate example</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Get request to get all bookings</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1004</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">152</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">852</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">12:34:21.524 request:
+1 &gt; GET https://restful-booker.herokuapp.com/booking
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:34:21.610 java.net.UnknownHostException: No such host is known (restful-booker.herokuapp.com), http call failed after 826 milliseconds for url: https://restful-booker.herokuapp.com/booking
+12:34:21.646 src/test/java/feature/assignment.feature:7
+When method get
+http call failed after 826 milliseconds for url: https://restful-booker.herokuapp.com/booking
+java.net.UnknownHostException: No such host is known (restful-booker.herokuapp.com)
+src/test/java/feature/assignment.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref skipped">8</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:10]</span>
+                <span class="scenario-name">Post request to create a booking</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>355</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request  {&quot;firstname&quot;: &quot;John&quot;, &quot;lastname&quot;: &quot;doe&quot;,&quot;totalprice&quot;: 100, &quot;depositpaid&quot;: true,&quot;bookingdates&quot;: { &quot;checkin&quot;: &quot;2024-03-06&quot;, &quot;checkout&quot;: &quot;2024-03-07&quot; }, &quot;additionalneeds&quot;: &quot;Breakfast&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">137</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">216</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">12:34:22.019 request:
+1 &gt; POST https://restful-booker.herokuapp.com/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 167
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;John&quot;,&quot;lastname&quot;:&quot;doe&quot;,&quot;totalprice&quot;:100,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-03-06&quot;,&quot;checkout&quot;:&quot;2024-03-07&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}
+
+12:34:22.044 java.net.UnknownHostException: restful-booker.herokuapp.com, http call failed after 35 milliseconds for url: https://restful-booker.herokuapp.com/booking
+12:34:22.045 src/test/java/feature/assignment.feature:14
+When method post
+http call failed after 35 milliseconds for url: https://restful-booker.herokuapp.com/booking
+java.net.UnknownHostException: restful-booker.herokuapp.com
+src/test/java/feature/assignment.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:17]</span>
+                <span class="scenario-name">Put request to update a booking</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>23</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request  {&quot;firstname&quot;: &quot;Tina&quot;, &quot;lastname&quot;: &quot;doe&quot;,&quot;totalprice&quot;: 111, &quot;depositpaid&quot;: true,&quot;bookingdates&quot;: { &quot;checkin&quot;: &quot;2024-03-06&quot;, &quot;checkout&quot;: &quot;2024-03-07&quot; }, &quot;additionalneeds&quot;: &quot;Breakfast&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell failed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">12:34:22.084 request:
+1 &gt; PUT https://restful-booker.herokuapp.com/booking/1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 167
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;firstname&quot;:&quot;Tina&quot;,&quot;lastname&quot;:&quot;doe&quot;,&quot;totalprice&quot;:111,&quot;depositpaid&quot;:true,&quot;bookingdates&quot;:{&quot;checkin&quot;:&quot;2024-03-06&quot;,&quot;checkout&quot;:&quot;2024-03-07&quot;},&quot;additionalneeds&quot;:&quot;Breakfast&quot;}
+
+12:34:22.096 java.net.UnknownHostException: restful-booker.herokuapp.com, http call failed after 17 milliseconds for url: https://restful-booker.herokuapp.com/booking/1
+12:34:22.099 src/test/java/feature/assignment.feature:21
+When method PUT
+http call failed after 17 milliseconds for url: https://restful-booker.herokuapp.com/booking/1
+java.net.UnknownHostException: restful-booker.herokuapp.com
+src/test/java/feature/assignment.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:24]</span>
+                <span class="scenario-name">Patch request to partially update a booking</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>21</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;totalprice&quot; : 201 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell failed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">12:34:22.143 request:
+1 &gt; PATCH https://restful-booker.herokuapp.com/booking/1
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 18
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;totalprice&quot;:201}
+
+12:34:22.146 java.net.UnknownHostException: restful-booker.herokuapp.com, http call failed after 12 milliseconds for url: https://restful-booker.herokuapp.com/booking/1
+12:34:22.147 src/test/java/feature/assignment.feature:27
+When method PATCH
+http call failed after 12 milliseconds for url: https://restful-booker.herokuapp.com/booking/1
+java.net.UnknownHostException: restful-booker.herokuapp.com
+src/test/java/feature/assignment.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:31]</span>
+                <span class="scenario-name">Delete request to delete a booking</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>13</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://restful-booker.herokuapp.com/booking/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref failed">33</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell failed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">12:34:22.174 request:
+1 &gt; DELETE https://restful-booker.herokuapp.com/booking/1
+1 &gt; Host: restful-booker.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:34:22.179 java.net.UnknownHostException: restful-booker.herokuapp.com, http call failed after 11 milliseconds for url: https://restful-booker.herokuapp.com/booking/1
+12:34:22.185 src/test/java/feature/assignment.feature:33
+When method DELETE
+http call failed after 11 milliseconds for url: https://restful-booker.herokuapp.com/booking/1
+java.net.UnknownHostException: restful-booker.herokuapp.com
+src/test/java/feature/assignment.feature:33
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
