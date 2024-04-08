@@ -35,7 +35,7 @@ public class StockPrices {
 
 	        // Read data from Excel file and store in a HashMap
 	        Map<String, String> stockPricesExcel = new HashMap<>();
-	        FileInputStream file = new FileInputStream(new File("path_to_excel_file"));
+	        FileInputStream file = new FileInputStream(new File("./Files/StockPrices.xlsx"));
 	        Workbook workbook = new XSSFWorkbook(file);
 	        Sheet sheet = workbook.getSheetAt(0);
 	        for (Row row : sheet) {
